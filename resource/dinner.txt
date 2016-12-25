@@ -1,0 +1,26 @@
+category.Dinner for 1 ............................................................................ 13.50
+1 Spring Roll, Sweet and Sour category.Chicken Balls, category.Beef Chop Suey, Steamed category.Rice
+
+category.Dinner for 2 ............................................................................... 27.95
+2 Spring Rolls, category.Chicken Fried category.Rice, category.Beef Chop Suey, Sweet and Sour category.Pork
+
+category.Dinner for 3 ............................................................................. 39.95
+3 Spring Rolls, category.Chicken Fried category.Rice, category.Beef Chop Suey, Sweet and Sour category.Pork, category.Pork Chow Mein
+
+category.Dinner for 4 (A) ....................................................................... 51.95
+4 Spring Rolls, category.Chicken Fried category.Rice, category.Beef Chop Suey, Sweet and Sour category.Pork, category.Pork Chow Mein, Lemon category.Chicken
+
+category.Dinner for 4 (B) ...................................................................... 58.95
+4 Spring Rolls, House Fried category.Rice, category.Chicken Chow Mein, category.Beef and Broccoli, Sweet and Sour category.Chicken Balls, Deep Fried Prawns
+
+category.Dinner for 6 (A) ....................................................................... 66.95
+6 Spring Rolls, category.Chicken Fried category.Rice, category.Beef Chop Suey, Sweet and Sour category.Pork, category.Pork Chow Mein, Lemon category.Chicken, Spicy category.Chicken
+
+category.Dinner for 6 (B) ....................................................................... 75.99
+6 Spring Rolls, House Fried category.Rice, category.Chicken Chow Mein, category.Beef and Broccoli, Garlic and Spicy Green Bean, Sweet and Sour category.Chicken Balls, Deep Fried Prawns
+
+category.Dinner for 8 (A) ....................................................................... 88.99
+8 Spring Rolls, category.Chicken Fried category.Rice (Large), category.Pork Chow Mein (Large), category.Beef Chop Suey, Sweet and Sour category.Pork (Large), Szechuan category.Chicken and Vegetables, Lemon category.Chicken, Ginger category.Beef
+
+category.Dinner for 8 (B) ............................................................... 96.99
+8 Spring Rolls, House Fried category.Rice (Large), category.Chicken Chow Mein (Large), category.Beef and Broccoli, category.Chicken and Vegetables with Cashew Nuts, Honey and Garlic category.Pork (Large), Deep Fried Prawns, Almond category.Chicken

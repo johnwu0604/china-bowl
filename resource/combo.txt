@@ -1,0 +1,8 @@
+category.Combo A ................................................................ 11.95
+category.Chicken chow mein, sweet and sour pork, beef chop suey
+
+category.Combo B ................................................................. 11.95
+category.Pork chow mein, beef and broccoli, sweet and sour chicken balls
+
+category.Combo C ................................................................. 11.95
+category.Chicken fried rice, lemon chicken, beef chop suey
