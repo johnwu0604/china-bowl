@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="china-bowl">
+<head>
+	<meta charset="utf-8">
+	<title>China Bowl</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="js/controllers/mainController.js"></script>
+	<script src="js/services/menuService.js"></script>
+	<script src="js/core.js"></script>
+</head>
+<body ng-controller="menu">
+
+<!-- preloader section -->
+<section class="preloader">
+	<div class="sk-spinner sk-spinner-pulse"></div>
+</section>
+
+<!-- navigation section -->
+<section class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">CHINA BOWL</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
+				<li><a href="#menu" class="smoothScroll">MENU</a></li>
+				<li><a href="#gallery" class="smoothScroll">GALLERY</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<!-- home section -->
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h1>CHINA BOWL RESTAURANT</h1>
+				<h2>FAMOUS HOT &amp; SPICY</h2>
+				<a href="#about" class="smoothScroll btn btn-default">LEARN MORE</a>
+			</div>
+		</div>
+	</div>		
+</section>
+
+
+<!-- gallery section -->
+<section id="about" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">About Us</h1>
+				<hr>
+			</div>
+			<div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeIn text-center" data-wow-delay="0.9s">
+				<p>We are a family owned Chinese food restaurant located in Langley, BC.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- menu section -->
+<section id="menu" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Our Menu</h1>
+				<hr>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Soup</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.soup.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceSmall }} (S) &nbsp; ${{ item.priceLarge }} (L)</span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Appetizer</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.appetizer.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Rice</em></p>
+				<h5>Fried Rice</h5>
+				<ul class=items>
+					<li ng-repeat="item in menu.rice.friedRice.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+				<h5>On Rice</h5>
+				<ul class=items>
+					<li ng-repeat="item in menu.rice.onRice.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Noodle</em></p>
+				<h5>Soft Noodle Chow Mein</h5>
+				<ul class=items>
+					<li ng-repeat="item in menu.noodle.softNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+				<h5>Noodle Mixed With Sauce</h5>
+				<ul class=items>
+					<li ng-repeat="item in menu.noodle.mixedNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+				<h5>Crispy Noodle Chow Mein</h5>
+				<ul class=items>
+					<li ng-repeat="item in menu.noodle.crispyNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+				<h5>Rice Noodle</h5>
+				<ul class=items>
+					<li ng-repeat="item in menu.noodle.riceNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Vegetarian Dishes</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.vegetable.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Pork</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.pork.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Beef</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.beef.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Chicken</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.chicken.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Egg Foo Yung</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.egg.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Seafood</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.seafood.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Canadian Dishes</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.western.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Special Dinners</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.dinner.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+					<h6>{{ item.description }}</h6>
+				</ul>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<p><em>Combination For ONE Person</em></p>
+				<ul class=items>
+					<li ng-repeat="item in menu.combo.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+						<span> &nbsp; ${{ item.priceLarge }} </span>
+						<h6>{{ item.description }}</h6>
+				</ul>
+			</div>
+	</div>
+</section>
+
+
+<!-- gallery section -->
+<section id="gallery" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Food Gallery</h1>
+				<hr>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+				<a href="images/gallery-img1.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img1.jpg" alt="gallery img"></a>
+				<div>
+					<h3>Lemon-Rosemary Prawn</h3>
+					<span>Seafood / Shrimp / Lemon</span>
+				</div>
+				<a href="images/gallery-img2.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img2.jpg" alt="gallery img"></a>
+				<div>
+					<h3>Lemon-Rosemary Vegetables</h3>
+					<span>Tomato / Rosemary / Lemon</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<a href="images/gallery-img3.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img3.jpg" alt="gallery img"></a>
+				<div>
+					<h3>Lemon-Rosemary Bakery</h3>
+					<span>Bread / Rosemary / Orange</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
+				<a href="images/gallery-img4.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img4.jpg" alt="gallery img"></a>
+				<div>
+					<h3>Lemon-Rosemary Salad</h3>
+					<span>Chicken / Rosemary / Green</span>
+				</div>
+				<a href="images/gallery-img5.jpg" data-lightbox-gallery="zenda-gallery"><img src="images/gallery-img5.jpg" alt="gallery img"></a>
+				<div>
+					<h3>Lemon-Rosemary Pizza</h3>
+					<span>Pasta / Rosemary / Green</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- footer section -->
+<footer id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Contact Info.</h2>
+				<div class="ph">
+					<p><i class="fa fa-phone"></i> Phone</p>
+					<h4>604 - 532 - 7898</h4>
+				</div>
+				<div class="address">
+					<p><i class="fa fa-map-marker"></i> Our Location</p>
+					<h4>#106 - 4061 200 Street, Langley, BC</h4>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+				<h2 class="heading">Business Hours</h2>
+					<p>Monday <span>4:30 PM - 9:00 PM</span></p>
+					<p>Tues-Thurs <span>12:00 PM - 9:00 PM</span></p>
+					<p>Friday <span>12:00 PM - 10:00 PM</span></p>
+				    <p>Saturday <span>3:00 PM - 10:00 PM</span></p>
+				    <p>Sunday/Holiday <span>4:30 PM - 9:00 PM</span></p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- copyright section -->
+<section id="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright © China Bowl Restaurant</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- JAVASCRIPT JS FILES -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
