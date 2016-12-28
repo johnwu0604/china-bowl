@@ -131,27 +131,48 @@
 <!-- gallery section -->
 <section id="menu" class="parallax-section">
 	<div class="container">
+
 		<div class="row">
-			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
-				<h1 class="heading">Our Menu</h1>
-				<hr>
-			</div>
+			<!--<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">-->
+				<!--<h1 class="heading">Our Menu</h1>-->
+				<!--<hr>-->
+			<!--</div>-->
 			<div class="col-md-12" data-wow-delay="0.2s">
 				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+					<!-- Bottom Carousel Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#quote-carousel" data-slide-to="1"></li>
+						<li data-target="#quote-carousel" data-slide-to="2"></li>
+						<li data-target="#quote-carousel" data-slide-to="3"></li>
+						<li data-target="#quote-carousel" data-slide-to="4"></li>
+						<li data-target="#quote-carousel" data-slide-to="5"></li>
+						<li data-target="#quote-carousel" data-slide-to="6"></li>
+						<li data-target="#quote-carousel" data-slide-to="7"></li>
+						<li data-target="#quote-carousel" data-slide-to="8"></li>
+						<li data-target="#quote-carousel" data-slide-to="9"></li>
+						<li data-target="#quote-carousel" data-slide-to="10"></li>
+						<li data-target="#quote-carousel" data-slide-to="11"></li>
+						<li data-target="#quote-carousel" data-slide-to="12"></li>
+					</ol>
+
 					<!-- Carousel Slides / Quotes -->
 					<div class="carousel-inner text-left">
-
-						<!-- Quote 1 -->
+						<!-- Section 1 -->
 						<div class="item active">
+							<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+								<h1 class="heading">Soup</h1>
+								<hr>
+							</div>
 							<div class="col-md-8 col-md-offset-2">
-								<p style="text-align: center"><em>Soup</em></p>
 								<ul class=items>
 									<li ng-repeat="item in menu.soup.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
 										<span> &nbsp; ${{ item.priceSmall }} (S) &nbsp; ${{ item.priceLarge }} (L)</span>
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 2 -->
+						<!-- Section 2 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Appetizer</em></p>
@@ -161,7 +182,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 3 -->
+						<!-- Section 3 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Rice</em></p>
@@ -177,7 +198,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 4 -->
+						<!-- Section 4 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Noodle</em></p>
@@ -203,7 +224,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 5 -->
+						<!-- Section 5 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Vegetarian Dishes</em></p>
@@ -213,7 +234,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 6 -->
+						<!-- Section 6 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Pork</em></p>
@@ -223,7 +244,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 7 -->
+						<!-- Section 7 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Beef</em></p>
@@ -233,7 +254,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 8 -->
+						<!-- Section 8 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Chicken</em></p>
@@ -243,7 +264,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 9 -->
+						<!-- Section 9 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Egg Foo Yung</em></p>
@@ -253,7 +274,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 10 -->
+						<!-- Section 10 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Seafood</em></p>
@@ -263,7 +284,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 11 -->
+						<!-- Section 11 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Canadian Dishes</em></p>
@@ -273,7 +294,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 12 -->
+						<!-- Section 12 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Special Dinners</em></p>
@@ -284,7 +305,7 @@
 								</ul>
 							</div>
 						</div>
-						<!-- Quote 13 -->
+						<!-- Section 13 -->
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<p style="text-align: center"><em>Combination For ONE Person</em></p>
