@@ -44,8 +44,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#home" class="smoothScroll">HOME</a></li>
 				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
-				<li><a href="#menu" class="smoothScroll">MENU</a></li>
 				<li><a href="#gallery" class="smoothScroll">GALLERY</a></li>
+				<li><a href="#menu" class="smoothScroll">MENU</a></li>
 				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
@@ -75,7 +75,7 @@
 				<h1 class="heading">About Us</h1>
 				<hr>
 			</div>
-			<div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeIn text-center" data-wow-delay="0.9s">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 wow text-center" data-wow-delay="0.9s">
 				<p>China Bowl is a family owned Chinese food restaurant located in Langley, BC. We specialize in Cantonese and Sezchuan
 				style cuisine. Our services include dine-in, take-out, and free delivery within 8km and a minimum order of $25.
 					In addition, we also offer catering for large scaled events (contact us for more details).
@@ -85,185 +85,6 @@
 	</div>
 </section>
 
-<section id="menu" class="parallax-section">
-<div class="container">
-	<div class="row">
-		<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
-			<h1 class="heading">Our Menu</h1>
-			<hr>
-		</div>
-		<div class="col-md-12" data-wow-delay="0.2s">
-			<div class="carousel slide" data-ride="carousel" id="quote-carousel">
-				<!-- Carousel Slides / Quotes -->
-				<div class="carousel-inner text-left">
-
-					<!-- Quote 1 -->
-					<div class="item active">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Soup</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.soup.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceSmall }} (S) &nbsp; ${{ item.priceLarge }} (L)</span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 2 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Appetizer</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.appetizer.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 3 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Rice</em></p>
-							<h5>Fried Rice</h5>
-							<ul class=items>
-								<li ng-repeat="item in menu.rice.friedRice.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-							<h5>On Rice</h5>
-							<ul class=items>
-								<li ng-repeat="item in menu.rice.onRice.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 4 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Noodle</em></p>
-							<h5>Soft Noodle Chow Mein</h5>
-							<ul class=items>
-								<li ng-repeat="item in menu.noodle.softNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-							<h5>Noodle Mixed With Sauce</h5>
-							<ul class=items>
-								<li ng-repeat="item in menu.noodle.mixedNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-							<h5>Crispy Noodle Chow Mein</h5>
-							<ul class=items>
-								<li ng-repeat="item in menu.noodle.crispyNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-							<h5>Rice Noodle</h5>
-							<ul class=items>
-								<li ng-repeat="item in menu.noodle.riceNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 5 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Vegetarian Dishes</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.vegetable.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 6 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Pork</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.pork.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 7 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Beef</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.beef.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 8 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Chicken</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.chicken.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 9 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Egg Foo Yung</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.egg.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 10 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Seafood</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.seafood.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 11 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Canadian Dishes</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.western.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 12 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Special Dinners</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.dinner.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-									<h6>{{ item.description }}</h6>
-							</ul>
-						</div>
-					</div>
-					<!-- Quote 13 -->
-					<div class="item">
-						<div class="col-md-8 col-md-offset-2">
-							<p style="text-align: center"><em>Combination For ONE Person</em></p>
-							<ul class=items>
-								<li ng-repeat="item in menu.combo.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
-									<span> &nbsp; ${{ item.priceLarge }} </span>
-									<h6>{{ item.description }}</h6>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<!-- Carousel Buttons Next/Prev -->
-				<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-				<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
-
-
-<!-- gallery section -->
 <section id="gallery" class="parallax-section">
 	<div class="container">
 		<div class="row">
@@ -300,6 +121,185 @@
 				<div>
 					<h3>Lemon-Rosemary Pizza</h3>
 					<span>Pasta / Rosemary / Green</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- gallery section -->
+<section id="menu" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">Our Menu</h1>
+				<hr>
+			</div>
+			<div class="col-md-12" data-wow-delay="0.2s">
+				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+					<!-- Carousel Slides / Quotes -->
+					<div class="carousel-inner text-left">
+
+						<!-- Quote 1 -->
+						<div class="item active">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Soup</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.soup.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceSmall }} (S) &nbsp; ${{ item.priceLarge }} (L)</span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 2 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Appetizer</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.appetizer.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 3 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Rice</em></p>
+								<h5>Fried Rice</h5>
+								<ul class=items>
+									<li ng-repeat="item in menu.rice.friedRice.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+								<h5>On Rice</h5>
+								<ul class=items>
+									<li ng-repeat="item in menu.rice.onRice.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 4 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Noodle</em></p>
+								<h5>Soft Noodle Chow Mein</h5>
+								<ul class=items>
+									<li ng-repeat="item in menu.noodle.softNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+								<h5>Noodle Mixed With Sauce</h5>
+								<ul class=items>
+									<li ng-repeat="item in menu.noodle.mixedNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+								<h5>Crispy Noodle Chow Mein</h5>
+								<ul class=items>
+									<li ng-repeat="item in menu.noodle.crispyNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+								<h5>Rice Noodle</h5>
+								<ul class=items>
+									<li ng-repeat="item in menu.noodle.riceNoodle.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 5 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Vegetarian Dishes</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.vegetable.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 6 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Pork</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.pork.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 7 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Beef</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.beef.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 8 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Chicken</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.chicken.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 9 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Egg Foo Yung</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.egg.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 10 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Seafood</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.seafood.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 11 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Canadian Dishes</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.western.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 12 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Special Dinners</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.dinner.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+										<h6>{{ item.description }}</h6>
+								</ul>
+							</div>
+						</div>
+						<!-- Quote 13 -->
+						<div class="item">
+							<div class="col-md-8 col-md-offset-2">
+								<p style="text-align: center"><em>Combination For ONE Person</em></p>
+								<ul class=items>
+									<li ng-repeat="item in menu.combo.items"><span>{{ item.id }}. {{ item.name }} &nbsp;</span>
+										<span> &nbsp; ${{ item.priceLarge }} </span>
+										<h6>{{ item.description }}</h6>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Carousel Buttons Next/Prev -->
+					<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+					<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
 				</div>
 			</div>
 		</div>

@@ -41,7 +41,7 @@ hr {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-#menu {
+#gallery {
   background: #f0f0f0;
 }
 
@@ -344,12 +344,12 @@ ul.items li:before {
 
 ul.items span:first-child {
   color: #333 !important;
-  background: #f0f0f0;
+  background: #ffffff;
 }
 
 ul.items span + span {
   float: right;
-  background: #f0f0f0;
+  background: #ffffff;
 }
 
 
