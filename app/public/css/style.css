@@ -380,7 +380,7 @@ ul.items span + span {
 #quote-carousel .carousel-indicators {
   right: 50%;
   top: auto;
-  bottom: 40px;
+  bottom: 0px;
   margin-right: -19px;
 }
 #quote-carousel .carousel-indicators li {
