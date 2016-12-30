@@ -127,7 +127,14 @@ hr {
 
 /* home section */
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background:
+    /* top, transparent red */
+          linear-gradient(
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+          ),
+            /* bottom, image */
+          url('../images/dragon.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -241,7 +248,14 @@ hr {
 
 /* footer section */
 footer {
-  background: url('../images/footer-bg.jpg') 50% 0 repeat-y fixed;
+  background:
+    /* top, transparent red */
+          linear-gradient(
+                  rgba(0, 0, 0, 0.45),
+                  rgba(0, 0, 0, 0.45)
+          ),
+            /* bottom, image */
+          url('../images/dining.jpg');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
