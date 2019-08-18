@@ -1,9 +1,0 @@
-House chow mein ................................................................ 12.95
-(category.Beef/category.Chicken) tomato on noodle ............................................. 10.95
-Curried (beef/chicken) and vegetables on noodle ........................ 10.95*
-Satay (beef/chicken) and vegetables on noodle ............................. 10.95
-(category.Beef/category.Chicken) and vegetables w/black bean on noodle ................... 10.95
-Spicy (beef/chicken) and vegetables on noodle ........................... 10.95*
-Pineapple sweet and sour (beef/chicken) on noodle ................. 10.95
-Spicy vegetables on noodles ................................................... 10.95
-Mixed vegetables on noodles .................................................. 10.95
